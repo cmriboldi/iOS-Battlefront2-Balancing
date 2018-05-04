@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		5E2B0A102070232800C5F05A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B0A0F2070232800C5F05A /* AppDelegate.swift */; };
-		5E2B0A122070232800C5F05A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B0A112070232800C5F05A /* ViewController.swift */; };
+		5E2B0A122070232800C5F05A /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B0A112070232800C5F05A /* TeamsViewController.swift */; };
 		5E2B0A152070232800C5F05A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2B0A132070232800C5F05A /* Main.storyboard */; };
 		5E2B0A172070232800C5F05A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E2B0A162070232800C5F05A /* Assets.xcassets */; };
 		5E2B0A1A2070232800C5F05A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2B0A182070232800C5F05A /* LaunchScreen.storyboard */; };
 		5E2B0A252070232800C5F05A /* BattlefrontBalancingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B0A242070232800C5F05A /* BattlefrontBalancingTests.swift */; };
 		5E2B0A302070232800C5F05A /* BattlefrontBalancingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B0A2F2070232800C5F05A /* BattlefrontBalancingUITests.swift */; };
+		5E2B0A412070239D00C5F05A /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B0A402070239D00C5F05A /* Players.swift */; };
+		5E2B0A432070247800C5F05A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B0A422070247800C5F05A /* Player.swift */; };
+		5E2B0A452070264800C5F05A /* GameStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B0A442070264800C5F05A /* GameStats.swift */; };
+		5ECC4A7C209B82540074649F /* PlayerScorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECC4A7B209B82540074649F /* PlayerScorer.swift */; };
+		5ECC4A7F209B872D0074649F /* Double+rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECC4A7E209B872D0074649F /* Double+rounding.swift */; };
+		5ECC4A81209B91790074649F /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECC4A80209B91790074649F /* UIColor+hex.swift */; };
+		5ECC4A84209BA6240074649F /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECC4A83209BA6240074649F /* Heap.swift */; };
+		5ECC4A86209BA63E0074649F /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECC4A85209BA63E0074649F /* PriorityQueue.swift */; };
+		5ECC4A88209BA7A20074649F /* BattleTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECC4A87209BA7A20074649F /* BattleTeam.swift */; };
+		5ECC4A8A209CF56B0074649F /* GameStatsNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECC4A89209CF56B0074649F /* GameStatsNormalizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +46,7 @@
 /* Begin PBXFileReference section */
 		5E2B0A0C2070232800C5F05A /* BattlefrontBalancing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BattlefrontBalancing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2B0A0F2070232800C5F05A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5E2B0A112070232800C5F05A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5E2B0A112070232800C5F05A /* TeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewController.swift; sourceTree = "<group>"; };
 		5E2B0A142070232800C5F05A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E2B0A162070232800C5F05A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E2B0A192070232800C5F05A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +57,16 @@
 		5E2B0A2B2070232800C5F05A /* BattlefrontBalancingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BattlefrontBalancingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2B0A2F2070232800C5F05A /* BattlefrontBalancingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattlefrontBalancingUITests.swift; sourceTree = "<group>"; };
 		5E2B0A312070232800C5F05A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E2B0A402070239D00C5F05A /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
+		5E2B0A422070247800C5F05A /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		5E2B0A442070264800C5F05A /* GameStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStats.swift; sourceTree = "<group>"; };
+		5ECC4A7B209B82540074649F /* PlayerScorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScorer.swift; sourceTree = "<group>"; };
+		5ECC4A7E209B872D0074649F /* Double+rounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+rounding.swift"; sourceTree = "<group>"; };
+		5ECC4A80209B91790074649F /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
+		5ECC4A83209BA6240074649F /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		5ECC4A85209BA63E0074649F /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
+		5ECC4A87209BA7A20074649F /* BattleTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleTeam.swift; sourceTree = "<group>"; };
+		5ECC4A89209CF56B0074649F /* GameStatsNormalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStatsNormalizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +117,14 @@
 		5E2B0A0E2070232800C5F05A /* BattlefrontBalancing */ = {
 			isa = PBXGroup;
 			children = (
+				5ECC4A82209BA6130074649F /* DataStructures */,
+				5ECC4A7D209B87140074649F /* Extensions */,
+				5ECC4A7A209B82380074649F /* Helpers */,
+				5E2B0A3F2070237B00C5F05A /* Controller */,
+				5E2B0A3E2070235E00C5F05A /* View */,
+				5E2B0A3D2070234B00C5F05A /* Model */,
 				5E2B0A0F2070232800C5F05A /* AppDelegate.swift */,
-				5E2B0A112070232800C5F05A /* ViewController.swift */,
-				5E2B0A132070232800C5F05A /* Main.storyboard */,
 				5E2B0A162070232800C5F05A /* Assets.xcassets */,
-				5E2B0A182070232800C5F05A /* LaunchScreen.storyboard */,
 				5E2B0A1B2070232800C5F05A /* Info.plist */,
 			);
 			path = BattlefrontBalancing;
@@ -123,6 +146,61 @@
 				5E2B0A312070232800C5F05A /* Info.plist */,
 			);
 			path = BattlefrontBalancingUITests;
+			sourceTree = "<group>";
+		};
+		5E2B0A3D2070234B00C5F05A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E2B0A402070239D00C5F05A /* Players.swift */,
+				5E2B0A422070247800C5F05A /* Player.swift */,
+				5E2B0A442070264800C5F05A /* GameStats.swift */,
+				5ECC4A87209BA7A20074649F /* BattleTeam.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5E2B0A3E2070235E00C5F05A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5E2B0A182070232800C5F05A /* LaunchScreen.storyboard */,
+				5E2B0A132070232800C5F05A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E2B0A3F2070237B00C5F05A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5E2B0A112070232800C5F05A /* TeamsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5ECC4A7A209B82380074649F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5ECC4A7B209B82540074649F /* PlayerScorer.swift */,
+				5ECC4A89209CF56B0074649F /* GameStatsNormalizer.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5ECC4A7D209B87140074649F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5ECC4A7E209B872D0074649F /* Double+rounding.swift */,
+				5ECC4A80209B91790074649F /* UIColor+hex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5ECC4A82209BA6130074649F /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				5ECC4A83209BA6240074649F /* Heap.swift */,
+				5ECC4A85209BA63E0074649F /* PriorityQueue.swift */,
+			);
+			path = DataStructures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +266,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Christian Riboldi";
 				TargetAttributes = {
 					5E2B0A0B2070232800C5F05A = {
@@ -259,8 +337,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E2B0A122070232800C5F05A /* ViewController.swift in Sources */,
+				5ECC4A8A209CF56B0074649F /* GameStatsNormalizer.swift in Sources */,
+				5ECC4A84209BA6240074649F /* Heap.swift in Sources */,
+				5ECC4A88209BA7A20074649F /* BattleTeam.swift in Sources */,
+				5E2B0A432070247800C5F05A /* Player.swift in Sources */,
+				5ECC4A81209B91790074649F /* UIColor+hex.swift in Sources */,
+				5E2B0A412070239D00C5F05A /* Players.swift in Sources */,
+				5ECC4A7C209B82540074649F /* PlayerScorer.swift in Sources */,
+				5ECC4A7F209B872D0074649F /* Double+rounding.swift in Sources */,
+				5E2B0A122070232800C5F05A /* TeamsViewController.swift in Sources */,
+				5ECC4A86209BA63E0074649F /* PriorityQueue.swift in Sources */,
 				5E2B0A102070232800C5F05A /* AppDelegate.swift in Sources */,
+				5E2B0A452070264800C5F05A /* GameStats.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +417,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -336,6 +425,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -386,6 +476,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -393,6 +484,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -427,7 +519,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F75NAGDE99;
+				DEVELOPMENT_TEAM = G5P88J4SPW;
 				INFOPLIST_FILE = BattlefrontBalancing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BattlefrontBalancing;
@@ -442,7 +534,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F75NAGDE99;
+				DEVELOPMENT_TEAM = G5P88J4SPW;
 				INFOPLIST_FILE = BattlefrontBalancing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BattlefrontBalancing;
